@@ -72,7 +72,7 @@ h1 img {
   position: fixed;
   top: 1rem;
   margin-left: 25%;
-  width: 35%;
+  width: 40%;
   border-radius: 15px;
 }
 .navbar-toggler {
@@ -88,9 +88,105 @@ h1 img {
 .imagen-fondo {
   width: 100%;
 }
-.productos {
-  margin-top: 55rem;
+/*Comienza Galeria Productos*/
+
+div.productos {
+  position: relative;
+  height: 80vh;
+  background-color: #ffe194;
+  border-radius: 10rem 0 10rem 0;
 }
+
+.img-product {
+  margin-top: 55rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.productos h1 {
+  width: 60%;
+  padding: 1rem;
+  margin-left: 20rem;
+  color: #000000;
+  font-family: sans-serif;
+}
+div button {
+  position: absolute;
+  width: 100px;
+  top: 2rem;
+  right: 2rem;
+  font-size: 18px;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(252, 248, 248);
+}
+button a {
+  outline: none;
+  text-decoration: none;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+div button:hover {
+  background-color: #4caf50;
+  color: black;
+}
+
+.boton-product {
+  color: black;
+}
+
+div.galeria {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 20px;
+  float: left;
+  width: 60vh;
+}
+
+.cont-imagen:hover .image {
+  opacity: 0.8;
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+}
+/* Parte Fade imagen comprar*/
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  font-weight: bold;
+}
+/* Termina Galeria Productos*/
 .piePagina {
   margin: 0;
   padding: 0;
@@ -101,4 +197,61 @@ h1 img {
 }
 .piePagina h1 {
   margin-left: 40rem;
+}
+/*Sobre Nosotros*/
+.sobreNosotros {
+  margin: 20px;
+  background-color: #000000;
+}
+
+/*Comienza Equipo Aptum*/
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.equipo {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
